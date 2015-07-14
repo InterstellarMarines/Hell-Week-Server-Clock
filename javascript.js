@@ -118,6 +118,10 @@ function formatCountdownSeconds(seconds) {
 }
 
 function formatMinutesSinceMidnight(minutes) {
+	if (minutes < 0) {
+		minutes += 60 * 24;
+	}
+	
 	var hours = Math.floor(minutes / 60);
 	var minutes = minutes - hours * 60;
 	var period = "AM";
