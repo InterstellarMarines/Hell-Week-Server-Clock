@@ -94,7 +94,7 @@ function formatCountdownSeconds(seconds) {
 		}
 		return -minutes + ":" + seconds;
 	} else {
-		if (seconds < 0) {
+		while (seconds < 0) {
 			seconds += 3600 * 24;
 		}
 
