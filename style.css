@@ -22,11 +22,21 @@ header img {
 	display:block;
 }
 
-.server {
+body > div > div {
 	border-radius:5px;
 	padding:20px;
 	margin-top:10px;
 	background-color:#333333;
+}
+
+.notifications {
+	border:1px solid #c65200;
+	text-align:center;
+	background-color:#222222;
+}
+
+.notifications a {
+	color:#ffffff;
 }
 
 .server p {
