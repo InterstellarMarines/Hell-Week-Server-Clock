@@ -152,6 +152,9 @@ function notificationShow(i) {
 }
 
 function notificationRequest() {
+	if (Notification.permission === "denied") {
+		alert("You have denied the request for notifications. Click the icon to the left of the URL and change the permission so notifications are allowed.")
+	}
 	Notification.requestPermission(function(response) {
 		if (response === "granted") {
 			notificationInfo();
